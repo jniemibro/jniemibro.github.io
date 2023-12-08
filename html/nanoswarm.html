@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h2>Nanoswarm</h2>
+                    <a href="../html/80hd.html">© 80HD Games, Inc.</a>
+                    <p>Developed in Unity (C#)</p>
+                    <ul class="icon-row">
+                        <li><i class="fab fa-unity"></i></a></li>
+                        <li>|</li>
+                        <li><a href="https://80hdgames.itch.io/nanoswarm"><i class="fab fa-itch-io"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fab fa-windows"></i></li>
+                        <li><i class="fab fa-app-store-ios" style="color:salmon;"></i><span>*</span></li>
+                    </ul>
+                    <p>Team Size: 6+</p>
+
+                    <br>
+                    <span><i class="fas fa-award"></i></span>
+                    <span>Grand Prize & Best Concept @ <a href="https://www.massdigi.org/gamechallenge/">MassDiGI’s Annual Game Challenge</a> (2012)</span>
+                    <br>
+
+                    <br>
+                    <p>My Roles:
+                        <ul>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-code"> Programming (C#)</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Collaborated with another programmer, learning C# in the process</p>
+                                    <p>- Implemented various PoweredObjects, using a system built by the lead programmer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Designed and implemented much of the UI</p>
+                                    <p>- Integrated textures made by other artists</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-cogs"> Build Manager</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Distributed iOS builds regularly via TestFlight</p>
+                                    <p>- Handled App Store meta entry, store page setup, and build submission</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Kept sound designer aprised of required SFX for the game</p>
+                                    <p>- Integrated SFX & Music created by another Composer/Sound Designer</p>
+                                    <p>- Located and integrated additional SFX</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Playtested builds via TestFlight</p>
+                                    <p>- Utilized Mantis Bug Tracker to report and monitor bugs</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </p>
+                    
+                    <br>
+                    <iframe frameborder="0" src="https://itch.io/embed/1276888?linkback=true&amp;border_width=5&amp;dark=true" width="560" height="175"><a href="https://80hdgames.itch.io/nanoswarm">Nanoswarm by 80HD Games</a></iframe>
+                    <br>
+
+                    <div class="gallery">
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI3Njg4OC83NTEwMTMyLmpwZWc=/794x1000/C7yens.jpeg" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI3Njg4OC83NTEwMTM3LmpwZWc=/794x1000/QjRsUS.jpeg" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI3Njg4OC83NTEwMTQyLmpwZWc=/794x1000/cIOnXx.jpeg" onclick="openModal();currentSlide(3)">
+                        </a>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI3Njg4OC83NTEwMTMyLmpwZWc=/794x1000/C7yens.jpeg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI3Njg4OC83NTEwMTM3LmpwZWc=/794x1000/QjRsUS.jpeg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI3Njg4OC83NTEwMTQyLmpwZWc=/794x1000/cIOnXx.jpeg" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">Nanoswarm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <p>Developed during the <a href="https://www.massdigi.org/programs-services/summer-innovation-program/">MassDiGI Summer Innovation Program (SIP)</a> of 2012. </p>
+
+                    <br>
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Unity</li>
+                        <li>MonoDevelop</li>
+                        <li>Subversion (SVN)</li>
+                        <li>GIMP</li>
+                        <li>Cheetah3D</li>
+                        <li>Audacity</li>
+                        <li>TestFlight</li>
+                        <li>Mantis Bug Tracker</li>
+                    </ul>
+
+                    <br>
+
+                    <p>*<span style="color:salmon">Previously available for iPad (Released 2012)</span></p>
+                </div>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>
