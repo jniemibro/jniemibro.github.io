@@ -1,0 +1,817 @@
+/* resetting browser stuff */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body   {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+hr {
+  height: 4px;
+  background-color: #777;
+  border: none;
+}
+
+/* overall page */
+body     {
+  background: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+}
+
+/* --- */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #222;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/*.cursor {
+  cursor: pointer;
+}*/
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #222;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* -- */
+
+ul, li {
+  list-style: circle;
+  list-style-position:inside;
+}
+
+/*ul a {
+  text-decoration: none;
+}*/
+
+a, span a, p a, h2 a, h1 a {
+  /*text-decoration: none;*/
+  text-decoration: underline;
+  margin: 0px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header   {
+  background: #222;
+  color: #FFF;
+  border-radius: 3px;
+}
+
+iframe {
+  width: 100%;
+  margin: auto;
+  display:flex;
+  border-radius: 6px;
+  border-style:none;
+  max-width: 600px;
+}
+
+.gallery {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0%;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+.gallery p {
+  text-align: center;
+  width: 100%;
+}
+
+.gallery img, .gallery-item img {
+  width: 100%;
+  height: auto;
+  /*padding: 10px;*/
+ 
+  border: 3px solid #111;
+  background: #333;
+  border-radius: 6px;
+ 
+  /* cover | contain | fill | scale-down */
+  object-fit: cover;
+  position: relative;
+}
+
+.gallery img:hover {
+  border: 2px solid wheat;
+  z-index: 9;
+  transform: scale(1.05);
+  transition: transform ease 0.3s;
+}
+
+.simple-gallery {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0%;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.simple-gallery p {
+  text-align: center;
+  width: 100%;
+}
+
+.simple-gallery img {
+  width: 100%;
+  height: auto;
+  /*padding: 10px;*/
+ 
+  border: 3px solid #111;
+  background: #333;
+  border-radius: 6px;
+ 
+  /* cover | contain | fill | scale-down */
+  object-fit: cover;
+  position: relative;
+}
+
+@media only screen and (max-width: 720px) {
+  .simple-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.simple-gallery img:hover {
+  border: 2px solid wheat;
+  transition: transform ease 0.3s;
+}
+
+/* Home page filtered gallery */
+section {
+  padding-bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+section ul {
+  background-color: #222;
+  width: 100%;
+  /*border-radius: 6px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section ul li {
+  display: block;
+  list-style:none;
+  background: #444;
+  border-radius: 6px;
+  padding: 6px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+section ul li.active {
+  background: wheat;
+  border-radius: 6px;
+  color: #222;
+}
+section ul li:hover {
+  color: wheat;
+  background-color: #777;
+}
+.product {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product .itemBox {
+  position: relative;
+  border-radius: 6px;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  display: block;
+}
+.product .itemBox.hide {
+  display: none;
+}
+.product .itemBox img {
+  position: absolute;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product .itemBox i {
+  color:black;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 9;
+  position:relative;
+  pointer-events: none;
+}
+.product .itemBox img:hover {
+  border: 2px solid wheat;
+  z-index: 9;
+  transform: scale(1.05);
+  transition: transform ease 0.3s;
+}
+
+.product .itemBox .hovercap {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+ 
+  position: absolute;
+  bottom: 0; left: 0;
+ 
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  z-index: 10;
+  transform: scale(1.05);
+
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.product .itemBox img:hover ~ .hovercap {
+  visibility: visible; 
+  opacity: 1;
+}
+
+/* Animating changes to filtered gallery elements */
+.active {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+.hide {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+/* Cards */
+.card {
+  background: #bbb;
+  padding: 12px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  min-height: 280px;
+  text-align: center;
+  margin:auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card {
+  border-radius: 6px;
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  border-radius: 6px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front, .flip-card-back {
+  border-radius: 6px;
+  padding: 6px 6px;
+  position: absolute;
+  background-color: #bbb;
+  color: black;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #444;
+  padding: 6px 6px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-title {
+  color: #444;
+  font-size: 18px;
+}
+
+.flip-card button, .card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.flip-card a {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0px;
+}
+
+.flip-card button:hover, .flip-card a:hover, .card button:hover, .card a:hover {
+  opacity: 0.7;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* styling logo/header */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  width: 24%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  display: inline-block;
+}
+
+
+/* styling footer */
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  border-radius: 3px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+
+  /*min-height: 200px;*/
+  background-image: url('../media/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.header-content   {
+  background-color: rgb(0,0,0,0.5);
+}
+.header a {
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px; 
+  line-height: 25px;
+  border-radius: 4px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #777;
+}
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #777;
+}
+.header a:hover {
+  background-color:rgba(245, 222, 179, 0.761);
+  color: black;
+}
+.header a.active {
+  background-color: rgb(77, 67, 52, 0.5);
+  color: white;
+}
+.header-right {
+  background-color: rgb(0,0,0,0.25);
+  border-radius: 3px;
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is narrower, stack the links on top of each other */ 
+@media screen and (max-width: 720px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    padding-top: 32px;
+    float: none;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*.gallery img {
+    min-height: 150px;
+    max-height: 200px;
+  }*/
+
+  .product .itemBox {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.middle {
+  color: #FFF;
+  text-align: center;
+  background-size: cover;
+  border-radius: 3px;
+  width:95%;
+  padding-left: 5%;
+}
+.middle h2 {
+  font-size: 16px;
+}
+.middle img {
+  width: 100%;
+  max-width: 1000px;
+}
+/*.middle ul {
+  list-style: circle;
+}*/
+.middle ul li {
+  list-style: circle;
+  list-style-position:initial;
+  display: block;
+}
+
+ul.icon-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+ul.icon-row li {
+  margin: 0 3px;
+}
+ul.icon-row a {
+  margin: 0px;
+}
+
+/* Collapsible */
+.collapsible {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+}
+.collapsible-active {
+  background-color: rgba(245, 222, 179, 0.761);
+  color: black;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #222;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible-active:after {
+  content: "\2212";
+}
+
+.collapsible-content {
+  text-align: left;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #111;
+  color: whitesmoke;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 800;
+  align-self: center;
+  align-content:center;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #777;
+  font-size: 16px;
+  padding: 8px 8px;
+  margin: auto;
+  bottom: 0px;
+  width:fit-content;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 12px
+  }
+}
+
+/* Fade in animation */
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
