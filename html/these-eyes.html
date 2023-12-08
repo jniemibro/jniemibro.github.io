@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h2>These Eyes</h2>
+                    <a href="../html/niemi-bros.html">© Niemi Bros Entertainment LLC</a>
+                    <br>
+                    <a href="https://godotwildjam.com">Godot Wild Jam #46 Submission (2022)</a>
+                    <p>Developed in Godot (GDScript)</p>
+                    <ul class="icon-row">
+                        <li><img src="../media/godot.png" style="width:20px"></li>
+                        <li><i class="fab fa-git"></i></a></li>
+                        <li>|</li>
+                        <li><a href="https://niemi-bros.itch.io/these-eyes"><i class="fab fa-itch-io"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fab fa-windows"></i></li>
+                        <li><i class="fab fa-apple"></i></li>
+                        <li><i class="fab fa-linux"></i></li>
+                    </ul>
+                    <ul>
+                        <li>Team Size: 2</li>
+                    </ul>
+
+                    <br>
+                    <p>My Roles:
+                        <ul>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-code"> Programming (GDScript)</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Sole programmer, GDScript</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Designed, and setup UI utilizing Godot's Themes.</p>
+                                    <p>- Created textures needed for UI elements.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design | Music</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Created SFX and music in TuxGuitar</p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5-2kAh9ZR9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-tools"> Technical Art | Build Manager</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Located and created shaders for various VFX in the game</p>
+                                    <p>- Setup post-processing and vfx</p>
+                                    <p>- Setup itch.io page and handled build submissions</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Utilized GitHub Issues to report and monitor bugs</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </p>
+                    <br>
+                    
+                    <iframe frameborder="0" src="https://itch.io/embed/1578403?linkback=true&amp;border_width=5&amp;dark=true" width="560" height="175"><a href="https://niemi-bros.itch.io/these-eyes">These Eyes by Niemi Bros Entertainment</a></iframe>
+                    <br>
+
+                    <p>Created during the Godot Wild Jam #46 under the theme, "Orb."</p>
+                    <br>
+                    <ul>Wild Card(s) (Optional limitations) Used:
+                    <li>• "I Feel Small" - Make enemies much larger than the player.</li>
+                    <li>• "Fear of the Dark" - Make someone or something follow the player.</li>
+                    <li>• "Non-Euclidean" - Have a map that is impossible in the real world.</li>
+                    </ul>
+
+                    <br>
+                    <div class="gallery">
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/a4ab4b340a7c2349ccbe30c74388f65d.png" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/a3d45c4455c7e4d27958d0d57e265534.png" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/8012c7a6def0869e8701576470c400b4.png" onclick="openModal();currentSlide(3)">
+                        </a>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/a4ab4b340a7c2349ccbe30c74388f65d.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/a3d45c4455c7e4d27958d0d57e265534.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/8012c7a6def0869e8701576470c400b4.png" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">These Eyes | Godot Wild Jam (GWJ) #46</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Godot</li>
+                        <li>GitHub</li>
+                        <li>TuxGuitar</li>
+                        <li>Ocenaudio</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>
