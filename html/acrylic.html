@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+            <!--
+            <div class="header">
+                <a href="../index.html" class="logo">Jonathan Niemi</a>
+                <div class="header-right">
+                    <a href="../html/acrylic.html" style="-webkit-text-stroke-color: wheat;">Art</a>
+                    <a href="../html/gamedev.html">Game Dev</a>
+                    <a href="../html/about.html">About</a>
+                </div>
+            </div>
+            -->
+
+            <div class="middle">
+                <br>
+                <h2>Acrylic Paintings</h2>
+                <br>
+                
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/051/094/659/medium/jonathan-niemi-9e1fdd8e-3b01-41f8-a52d-238615627203.jpg?1656440862" onclick="openModal();currentSlide(1)">
+                        <p>Whitcomb Manor (SOLD)</p>
+                        <p>16" x 20"</p>
+                        <p>Acrylic on Canvas</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/058/358/331/medium/jonathan-niemi-jn-portland-hex-light.jpg?1673979271" onclick="openModal();currentSlide(2)">
+                        <p>Portland Head Light</p>
+                        <p>16" x 20"</p>
+                        <p>Acrylic on Panel</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/051/094/667/medium/jonathan-niemi-876dae38-c2bc-4899-95a9-e186670f2234.jpg?1656440623" onclick="openModal();currentSlide(3)">
+                        <p>Babbling Brook (SOLD)</p>
+                        <p>16" x 20"</p>
+                        <p>Acrylic on Linen</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/051/094/670/medium/jonathan-niemi-72724174-f71f-4c96-ace7-413ffdac2f9c.jpg?1656440633" onclick="openModal();currentSlide(4)">
+                        <p>The 1761 Old Mill (SOLD)</p>
+                        <p>9" x 12"</p>
+                        <p>Acrylic on Canvas</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/072/272/163/large/jonathan-niemi-cherries.jpg?1706989456" onclick="openModal();currentSlide(5)">
+                        <p>Cherries (SOLD)</p>
+                        <p>9" x 12"</p>
+                        <p>Acrylic on Canvas</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/077/326/126/large/jonathan-niemi-gander-at-the-old-mill.jpg?1719180846" onclick="openModal();currentSlide(6)">
+                        <p>Gander at the Old Mill</p>
+                        <p>16" x 20"</p>
+                        <p>Acrylic on Linen</p>
+                    </div>
+                </div>
+                <br>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                    
+                        <div class="mySlides">
+                        <div class="numbertext">1</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/051/094/659/medium/jonathan-niemi-9e1fdd8e-3b01-41f8-a52d-238615627203.jpg?1656440862" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                        <div class="numbertext">2</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/058/358/331/medium/jonathan-niemi-jn-portland-hex-light.jpg?1673979271" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                        <div class="numbertext">3</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/051/094/667/medium/jonathan-niemi-876dae38-c2bc-4899-95a9-e186670f2234.jpg?1656440623" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                        <div class="numbertext">4</div>
+                        <img src="https://cdna.artstation.com/p/assets/images/images/051/094/670/medium/jonathan-niemi-72724174-f71f-4c96-ace7-413ffdac2f9c.jpg?1656440633" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                        <div class="numbertext">5</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/072/272/163/large/jonathan-niemi-cherries.jpg?1706989456" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                        <div class="numbertext">6</div>
+                        <img src="https://cdna.artstation.com/p/assets/images/images/077/326/126/large/jonathan-niemi-gander-at-the-old-mill.jpg?1719180846" style="width:100%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <div class="caption-container">
+                            <p id="caption">Acrylic Paintings</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>For more Acrylic paintings visit:</p>
+                <a href="https://www.artwanted.com/jniemiart">https://www.artwanted.com/jniemiart</a>
+
+            </div>
+
+        </header>
+
+        <footer-component></footer-component>
+
+    </body>
+</html>

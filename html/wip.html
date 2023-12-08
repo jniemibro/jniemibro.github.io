@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h1>WIP Projects/Prototypes</h1>
+                    <a href="../html/niemi-bros.html">© Niemi Bros Entertainment LLC</a>
+                    <ul class="icon-row">
+                        <li><img src="../media/godot.png" style="width:20px"></li>
+                        <li><i class="fab fa-git"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fab fa-windows"></i></li>
+                        <li><i class="fab fa-apple"></i></li>
+                    </ul>
+                    <ul>
+                        <li>Team Size: 2 + Contractors</li>
+                    </ul>
+                    <br>
+                    <p>Preview of various WIP projects using the Godot Engine.</p>
+
+                    <br>
+                    <p>My Roles:</p>
+                    <ul>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-code"> Programming (GDScript)</i></button>
+                            <div class="collapsible-content">
+                              <p>- At the moment, I am the sole programmer for these projects. Using GDScript.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                            <div class="collapsible-content">
+                              <p>- Setting up UI utilizing Godot's Themes.</p>
+                              <p>- Creating textures for UI elements as needed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design | Music</i></button>
+                            <div class="collapsible-content">
+                              <p>- Creating, or locating, SFX and music.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-palette"> 2D Art</i></button>
+                            <div class="collapsible-content">
+                              <p>- Various 2D art, mostly <a href="../html/pixel-art.html">pixel art</a> characters and UI elements.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-tools"> Technical Art | Build Manager</i></button>
+                            <div class="collapsible-content">
+                                <p>- Updating builds on Steam for internal beta testing.</p>
+                                <p>- Setting up store pages on itch.io & Steam.</p>
+                                <p>- Locating, creating, & troubleshooting shaders.</p>
+                                <p>- Profiling and identifying performance issues.</p>
+                                <p>- Created <a href="https://github.com/jniemibro/Godot-Build-Tools">Build Tools</a>.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                            <div class="collapsible-content">
+                              <p>- Utilizing GitHub Issues to report and monitor bugs</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <br>
+                    <p>The 1st screenshot is a preview of the Godot version of <a href="../html/tar-unity.html">The Arcane Relics (TAR)</a></p>
+                    <div class="gallery">
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/01/c7b140612befd7370a686addd5b8b30e.png" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/0fc4ef58eb12c7f53f2eb45461256965.gif" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2021/11/03d5ae6471426d52dba07c91e9f5d2c4.jpeg" onclick="openModal();currentSlide(3)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/a22d11f1a7cb7352eaf81e2931600661.jpeg" onclick="openModal();currentSlide(4)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/fb8e0575a70ebd40cd162694647aab3d.jpeg" onclick="openModal();currentSlide(5)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/2961be01cbaed74de737702c88a545fe.jpeg" onclick="openModal();currentSlide(6)">
+                        </a>
+                    </div>
+                    <p>We're trying out some different ideas, with different genres/mechanics:</p>
+                    <p>3rd-person fantasy, 2D beat 'em ups, 1st-person shooter, & 3rd-person platformer</p>
+                    <br>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/01/c7b140612befd7370a686addd5b8b30e.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/0fc4ef58eb12c7f53f2eb45461256965.gif" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2021/11/03d5ae6471426d52dba07c91e9f5d2c4.jpeg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/a22d11f1a7cb7352eaf81e2931600661.jpeg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/fb8e0575a70ebd40cd162694647aab3d.jpeg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/2961be01cbaed74de737702c88a545fe.jpeg" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">WIP Godot Projects/Prototypes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Godot</li>
+                        <li>GitHub</li>
+                        <li>Aseprite</li>
+                        <li>GIMP</li>
+                        <li>TuxGuitar</li>
+                        <li>Ocenaudio</li>
+                    </ul>
+
+                    <br>
+                    <p style="color: gray;">So many ideas...</p>
+
+                </div>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>

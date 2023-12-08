@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h2>Sherlock Moles Investigates: Lunar Phases</h2>
+                    <a href="../html/niemi-bros.html">© Niemi Bros Entertainment LLC</a>
+                    <br>
+                    <p>Developed in Unity (C#)</p>
+                    <ul class="icon-row">
+                        <li><i class="fab fa-unity"></i></a></li>
+                        <li><i class="fab fa-git"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fa fa-globe"></i></li>
+                        <p>WebGL</p>
+                    </ul>
+                    <a href="https://legendsoflearning.com">Client: Legends of Learning</a>
+                    <p>Team Size: 2</p>
+
+                    <br>
+                    <p>Game Link:</p>
+                    <a href="https://app.legendsoflearning.com/game/sherlock-moles-investigates-lunar-phases/3843?partner=legends-internal">PLAY GAME</a>
+                    <br>
+
+                    <br>
+                    <p>My Roles:
+                    <ul>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-code"> Programming (C#)</i></button>
+                            <div class="collapsible-content">
+                                <p>- Sole programmer, C#</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design | Music</i></button>
+                            <div class="collapsible-content">
+                                <p>- Composed music in TuxGuitar</p>
+                                <p>- Created SFX in TuxGuitar</p>
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/08SSr-zZwWE?si=A2wRYo8jJsG8YhuG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-palette"> 2D Character Artist</i></button>
+                            <div class="collapsible-content">
+                              <p>- Designed the characters, Sherlock Moles and Chase the Goose</p>
+                              <p>- Rendered characters using a combination of Krita and Aseprite</p>
+                              <img src="https://cdnb.artstation.com/p/assets/images/images/073/092/035/large/jonathan-niemi-lunarphasescharacters.jpg?1708903863" style="width:100%">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                            <div class="collapsible-content">
+                                <p>- Setup much of the UI</p>
+                                <p>- Incorporated textures made from another artist</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                            <div class="collapsible-content">
+                              <p>- Utilized GitHub Issues to report and monitor bugs</p>
+                              <p>- Utilized the Legends of Learning dashboard and test harness to troubleshoot and locate bugs</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </p>
+
+                    <br>
+                    <p>Built an educational WebGL game for the client, Legends of Learning, using Unity. The game was built to reinforce learning about the moon cycle targeting middle schoolers.</p>
+                    <br>
+
+                    <br>
+                    <h2>Timeline</h2>
+                    <p>2024 - v1.1, Released on the Legends of Learning platform</p>
+                    <br>
+
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zCHgcoxwZEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+
+                    <div class="gallery">
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/079/754/large/jonathan-niemi-sherlockmoles-lunarphases-gameicon.jpg?1708878942" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/092/056/large/jonathan-niemi-screenshot-v1-0-2024-02-23-16-14-23-407.jpg?1708903971" onclick="openModal();currentSlide(2)">
+                        </a>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/073/079/754/large/jonathan-niemi-sherlockmoles-lunarphases-gameicon.jpg?1708878942" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/073/092/056/large/jonathan-niemi-screenshot-v1-0-2024-02-23-16-14-23-407.jpg?1708903971" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">Sherlock Moles Investigates: Pure Substances | Legends of Learning</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Microsoft Visual Studio Code</li>
+                        <li>Krita</li>
+                        <li>Aseprite</li>
+                        <li>GitHub</li>
+                        <li>TuxGuitar</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>

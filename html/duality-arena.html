@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h2>Duality Arena</h2>
+                    <a href="../html/80hd.html">© 80HD Games, Inc.</a>
+                    <br>
+                    <a href="https://globalgamejam.org/2022/games/duality-arena-5">Global Game Jam (GGJ) 2022 Submission</a>
+                    <p>Developed in Unity (C#)</p>
+                    <ul class="icon-row">
+                        <li><i class="fab fa-unity"></i></a></li>
+                        <li><i class="fab fa-git"></i></a></li>
+                        <li>|</li>
+                        <li><a href="https://80hdgames.itch.io/duality-arena"><i class="fab fa-itch-io"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fab fa-windows"></i></li>
+                        <li><i class="fab fa-apple"></i></li>
+                    </ul>
+                    <p>Team Size: 5</p>
+
+                    <br>
+                    <p>My Roles:
+                    <ul>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-code"> Programming (C#)</i></button>
+                            <div class="collapsible-content">
+                                <p>- Collaborated with another programmer, C#</p>
+                                <p>- Implemented audio systems</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design | Music</i></button>
+                            <div class="collapsible-content">
+                                <p>- Composed music in TuxGuitar</p>
+                                <p>- Located, created, & integrated SFX</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                            <div class="collapsible-content">
+                                <p>- Designed and implemented much of the UI</p>
+                                <p>- Integrated textures made by other artists</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-tools"> Technical Art</i></button>
+                            <div class="collapsible-content">
+                                <p>- Setup post-processing VFX: Chromatic Aberration & Bloom</p>
+                                <p>- Setup various assets created by artists including particle systems and the background image in engine</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                            <div class="collapsible-content">
+                              <p>- Utilized GitHub Issues to report and monitor bugs</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </p>
+
+                    <br>
+                    <iframe frameborder="0" src="https://itch.io/embed/1384227?linkback=true&amp;border_width=5&amp;dark=true" width="560" height="175"><a href="https://80hdgames.itch.io/duality-arena">Duality Arena by 80HD Games</a></iframe>
+                    <br>
+
+                    <p>The theme for the jam was, "Duality."</p>
+                    <br>
+                    
+                    <div class="gallery">
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTM4NDIyNy84MDYzMjQwLmpwZWc=/794x1000/GRTRUg.jpeg" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTM4NDIyNy84MDYzMjUxLmpwZWc=/794x1000/z%2FY5k7.jpeg" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTM4NDIyNy84MDYzMjUyLmpwZWc=/794x1000/XJvITO.jpeg" onclick="openModal();currentSlide(3)">
+                        </a>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTM4NDIyNy84MDYzMjQwLmpwZWc=/794x1000/GRTRUg.jpeg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTM4NDIyNy84MDYzMjUxLmpwZWc=/794x1000/z%2FY5k7.jpeg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTM4NDIyNy84MDYzMjUyLmpwZWc=/794x1000/XJvITO.jpeg" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">Duality Arena | Global Game Jam (GGJ) '22</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>GitHub</li>
+                        <li>TuxGuitar</li>
+                        <li>Ocenaudio</li>
+                    </ul>
+
+                    <br>
+                    <span>Source Code:</span>
+                    <span>
+                        <a href="https://github.com/Tayrtahn/ggj2022" style="text-decoration: none;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </span>
+                    <br>
+                </div>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>

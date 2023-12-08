@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h2>Digital Painting</h2>
+                    <br>
+
+                    <div class="gallery">
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/066/751/421/large/jonathan-niemi-giant-wox-skull-lo.jpg?1693678048" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/120/050/large/jonathan-niemi-banner-bearer-lo.jpg?1708965728" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/065/827/087/large/jonathan-niemi-to-the-weapons-lo.jpg?1691338281" onclick="openModal();currentSlide(3)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/058/446/566/medium/jonathan-niemi-jn-muddywaters.jpg?1674165942" onclick="openModal();currentSlide(4)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/071/514/700/large/jonathan-niemi-jn-scriptcover-lo.jpg?1705355774" onclick="openModal();currentSlide(5)">
+                        </a>
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/070/041/125/large/jonathan-niemi-stick-pit-lo.jpg?1701626678" onclick="openModal();currentSlide(6)">
+                        </a>
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/068/299/553/large/jonathan-niemi-sharpen-up-12-lo.jpg?1697480564" onclick="openModal();currentSlide(7)">
+                        </a>
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/081/066/295/large/jonathan-niemi-a-dwarf15.jpg?1729267669" onclick="openModal();currentSlide(8)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/045/906/680/medium/jonathan-niemi-huntress.jpg?1643823096" onclick="openModal();currentSlide(9)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/045/904/614/medium/jonathan-niemi-jn-bumbardiapromo.jpg?1643819925" onclick="openModal();currentSlide(10)">
+                        </a>
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/051/470/089/large/jonathan-niemi-d4d82753-a49f-40de-8d80-1244cfd4929a.jpg?1657376143" onclick="openModal();currentSlide(11)">
+                        </a>
+                        <a>
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/051/471/339/large/jonathan-niemi-d9ff96d9-8486-4c31-ac44-9a39e3e019b7.jpg?1657379360" onclick="openModal();currentSlide(12)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/045/904/974/medium/jonathan-niemi-0743700e-d2bf-4fe2-88a5-f5653d613eb7.jpg?1643820581" onclick="openModal();currentSlide(13)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/081/523/100/large/jonathan-niemi-knightrework2.jpg?1730487842" onclick="openModal();currentSlide(14)">
+                        </a>
+                        <a>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/082/217/658/large/jonathan-niemi-buddy4.jpg?1732381926" onclick="openModal();currentSlide(15)">
+                        </a>
+                    </div>
+                    <br>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/066/751/421/large/jonathan-niemi-giant-wox-skull-lo.jpg?1693678048" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/073/120/050/large/jonathan-niemi-banner-bearer-lo.jpg?1708965728" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/065/827/087/large/jonathan-niemi-to-the-weapons-lo.jpg?1691338281" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/058/446/566/medium/jonathan-niemi-jn-muddywaters.jpg?1674165942" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/071/514/700/large/jonathan-niemi-jn-scriptcover-lo.jpg?1705355774" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/070/041/125/large/jonathan-niemi-stick-pit-lo.jpg?1701626678" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/068/299/553/large/jonathan-niemi-sharpen-up-12-lo.jpg?1697480564" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/081/066/295/large/jonathan-niemi-a-dwarf15.jpg?1729267669" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/045/906/680/medium/jonathan-niemi-huntress.jpg?1643823096" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/045/904/614/medium/jonathan-niemi-jn-bumbardiapromo.jpg?1643819925" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/051/470/089/large/jonathan-niemi-d4d82753-a49f-40de-8d80-1244cfd4929a.jpg?1657376143" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/051/471/339/large/jonathan-niemi-d9ff96d9-8486-4c31-ac44-9a39e3e019b7.jpg?1657379360" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/045/904/974/medium/jonathan-niemi-0743700e-d2bf-4fe2-88a5-f5653d613eb7.jpg?1643820581" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/081/523/100/large/jonathan-niemi-knightrework2.jpg?1730487842">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/082/217/658/large/jonathan-niemi-buddy4.jpg?1732381926">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">Digital Paintings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+                    <h2>Software Used:</h2>
+                    <ul>
+                        <li>Krita</li>
+                        <li>Adobe Photoshop</li>
+                        <li>GIMP</li>
+                        <li>SketchBook (iOS App)</li>
+                    </ul>
+
+                </div>
+                <br>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>

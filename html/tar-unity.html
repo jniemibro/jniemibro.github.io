@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <br>
+                <div class="middle">
+                    <img src="../media/tar.png" style="height: 200px; width:auto">
+                    <br><a href="../html/niemi-bros.html">© Niemi Bros Entertainment LLC</a>
+                    <p>Developed in Unity (C#)</p>
+                    <ul class="icon-row">
+                        <li><i class="fab fa-unity"></i></a></li>
+                        <li><i class="fab fa-git"></i></a></li>
+                        <li>|</li>
+                        <li><a href="https://niemi-bros.itch.io/the-arcane-relics"><i class="fab fa-itch-io"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fab fa-windows"></i></li>
+                        <li><i class="fab fa-apple"></i></li>
+                        <li><i class="fab fa-linux"></i></li>
+                    </ul>
+                    <p>Team Size: 2 + Contractors</p>
+
+                    <br>
+                    <p>My Roles:
+                        <ul>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-code"> Programming (C#)</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Sole programmer, C#</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design | Music</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Composed music in GarageBand and TuxGuitar</p>
+                                    <p>- Located and created SFX</p>
+                                    <p>- Voice Acting</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Designed and implemented much of the UI.</p>
+                                    <p>- Integrated textures made by another artist.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-tools"> Technical Art</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Preparing and troubleshooting issues with imported animation rigs for use with Mecanim</p>
+                                    <p>- Setup animator trees including layers, state machine transitions, and variables</p>
+                                    <img src="https://cdna.artstation.com/p/assets/images/images/047/641/492/large/jonathan-niemi-tar-unity-animator-tree.jpg?1648072082">
+                                    <img src="https://cdnb.artstation.com/p/assets/images/images/047/641/589/large/jonathan-niemi-tar-screen-shot-2021-12-11-at-10-56-07-am-1.jpg?1648072280">
+                                    <p>- Creating and troubleshooting shaders</p>
+                                    <p>- Profiling and identifying performance issues</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-cube"> 3D Models | Animation</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Created various 3D models in Cheetah3D including the zombie</p>
+                                    <img src="https://cdnb.artstation.com/p/assets/images/images/051/124/521/large/jonathan-niemi-zombie1-1.jpg?1656513165">
+                                    <img src="https://cdna.artstation.com/p/assets/images/images/051/124/530/large/jonathan-niemi-zombie-2021-12-13-at-12-05-49-pm.jpg?1656513175">
+                                    <img src="https://cdnb.artstation.com/p/assets/images/images/051/124/517/large/jonathan-niemi-zombie-uvs.jpg?1656513156">
+                                    <p>- Created various animations</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-cogs"> Build Manager</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Responsible for builds and uploading to itch.io and Steam.</p>
+                                    <p>- Utilized build tools for clarifying build process. Steam vs. itch for Windows/mac/linux</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                                <div class="collapsible-content">
+                                    <p>- Utilized GitHub Issues to track and monitor bugs</p>
+                                    <p>- Monitored itch.io page for possible bug reports by users</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </p>
+                    <br>
+
+                    <br>
+                    <div class="gallery">
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzI4Mzk3MjAuanBn/794x1000/is0Gm8.jpg" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzI4Mzk3MjQuanBn/794x1000/6Dy6lZ.jpg" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzI4Mzk3MjEuanBn/794x1000/vfjwKd.jpg" onclick="openModal();currentSlide(3)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5Lzk3ODU5MC5wbmc=/original/Eztu4G.png" onclick="openModal();currentSlide(4)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5Lzk3ODU5Ny5wbmc=/original/qnmjfs.png" onclick="openModal();currentSlide(5)">
+                        </a>
+                        <a>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5Lzk3ODU3Ni5wbmc=/original/omE6rs.png" onclick="openModal();currentSlide(6)">
+                        </a>
+                    </div>
+                    <br>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzI4Mzk3MjAuanBn/794x1000/is0Gm8.jpg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzI4Mzk3MjQuanBn/794x1000/6Dy6lZ.jpg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzI4Mzk3MjEuanBn/794x1000/vfjwKd.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5Lzk3ODU5MC5wbmc=/original/Eztu4G.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5Lzk3ODU5Ny5wbmc=/original/qnmjfs.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5Lzk3ODU3Ni5wbmc=/original/omE6rs.png" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">The Arcane Relics (TAR)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <p>This is the latest publicly released version of the game (v0.2), pre-alpha. The next version is being <a href="../html/wip.html">rebuilt in Godot.</a></a></p>
+                    <br>
+
+                    <br>
+                    <h2>Timeline</h2>
+                    <p>2016 - Greenlit on Steam's previously offered Greenlight Program</p>
+                    <p>2017 - v0.1</p>
+                    <p>2020 - v0.2</p>
+                    <p>2021 - Start of rebuilding in Godot</p>
+                    <br>
+
+                    <br>
+                    <iframe frameborder="0" src="https://itch.io/embed/128499?linkback=true&amp;border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="100%" height="175"><a href="https://niemi-bros.itch.io/the-arcane-relics">The Arcane Relics™ by Niemi Bros Entertainment</a></iframe>
+                    <br>
+
+                    <br>
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>GitHub, Subversion (SVN)</li>
+                        <li>GIMP</li>
+                        <li>Cheetah3D</li>
+                        <li>TuxGuitar</li>
+                        <li>Audacity</li>
+                        <li>GarageBand</li>
+                    </ul>
+
+                    <br>
+                    <p style="color: gray;">This game's probably going to be the death of me...</p>
+
+                </div>
+
+
+                <!--
+                <br>
+                <div class="gallery">
+                    <a href="#">
+                        <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/01/6d7e2051b20a6ace16260cc08a61b53a.jpeg">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/01/befa8e1a4652dcf90e3ec667eeeb7b83.jpeg">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/01/1fcbbae8c8682a88addb95b821abeed4.jpeg">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/01/1bbfb9c0754a9894394bf096ae52f354.jpeg">
+                    </a>
+                </div>
+                <br>
+                -->
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>
