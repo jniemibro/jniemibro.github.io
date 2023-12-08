@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Jonathan Niemi</title>
+        <script src="../js/components/header.js" type="text/javascript" defer></script>
+        <script src="../js/components/footer.js" type="text/javascript" defer></script>
+        <script src="../js/modal.js" type="text/javascript" defer></script>
+        <script src="../js/collapsible.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header-component></header-component>
+        
+            <div class="fade-in">
+                <div class="middle">
+                    <br>
+                    <h2>Neander-Brawl</h2>
+                    <a href="../html/niemi-bros.html">© Niemi Bros Entertainment LLC</a>
+                    <br>
+                    <a href="https://godotwildjam.com">Godot Wild Jam #42 Submission (2022)</a>
+                    <p>Developed in Godot (GDScript)</p>
+                    <ul class="icon-row">
+                        <li><img src="../media/godot.png" style="width:20px"></li>
+                        <li><i class="fab fa-git"></i></a></li>
+                        <li>|</li>
+                        <li><a href="https://niemi-bros.itch.io/neander-brawl"><i class="fab fa-itch-io"></i></a></li>
+                        <li>|</li>
+                        <li><i class="fab fa-windows"></i></li>
+                        <li><i class="fab fa-apple"></i></li>
+                        <li><i class="fab fa-linux"></i></li>
+                    </ul>
+                    <ul>
+                        <li>Team Size: 2</li>
+                    </ul>
+
+                    <br>
+                    <p>My Roles:</p>
+                    <ul>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-code"> Programming (GDScript)</i></button>
+                            <div class="collapsible-content">
+                              <p>- Sole programmer, GDScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-th"> UI</i></button>
+                            <div class="collapsible-content">
+                              <p>- Designed, and setup UI utilizing Godot's Themes.</p>
+                              <p>- Located and integrated a font that fit the game's theme.</p>
+                              <p>- Created textures needed for UI elements.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-headphones-alt"> Audio Design | Music</i></button>
+                            <div class="collapsible-content">
+                              <p>- Created SFX and music in TuxGuitar. Audio editing in ocenaudio.</p>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLT-8sVdq20_wwdpXlrCqo2LRjEsab62j2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-palette"> Character Art</i></button>
+                            <div class="collapsible-content">
+                              <p>- Painted Cavemen, club, and misc UI textures in GIMP.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-tools"> Technical Art | Build Manager</i></button>
+                            <div class="collapsible-content">
+                                <p>- Setup and animated characters using Godot's 2D Skeleton and IK</p>
+                                <p>- Setup itch.io page and handled build submissions</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="collapsible"><i class="fas fa-bug"> Playtesting | Bug Reporting</i></button>
+                            <div class="collapsible-content">
+                              <p>- Utilized GitHub Issues to report and monitor bugs</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <iframe frameborder="0" src="https://itch.io/embed/1404382?linkback=true&amp;border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="560" height="175"><a href="https://niemi-bros.itch.io/neander-brawl">Neander-Brawl by Niemi Bros Entertainment</a></iframe>
+                    <br>
+
+                    <p>Created during the Godot Wild Jam #42 under the theme, "Ancient."</p>
+                    <p>No Wild Card(s) (Optional limitations) Used</p>
+
+                    <br>
+                    <div class="gallery">
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/6519cc1a13a9d9d082d811c8d6296daf.png" onclick="openModal();currentSlide(1)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/730961dd880f419360764f1e755d4cbb.png" onclick="openModal();currentSlide(2)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/fcfce644d526336710c3b87d6ba31f92.png" onclick="openModal();currentSlide(3)">
+                        </a>
+                        <a>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/3956eb7ad4f54ba9d5b1b1c6f775a834.png" onclick="openModal();currentSlide(4)">
+                        </a>
+                    </div>
+                    <br>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/6519cc1a13a9d9d082d811c8d6296daf.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/730961dd880f419360764f1e755d4cbb.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/fcfce644d526336710c3b87d6ba31f92.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/3956eb7ad4f54ba9d5b1b1c6f775a834.png" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption">Neander-Brawl | Godot Wild Jam (GWJ) #42</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Software/Tools Used:</h2>
+                    <ul>
+                        <li>Godot</li>
+                        <li>GitHub</li>
+                        <li>GIMP</li>
+                        <li>TuxGuitar</li>
+                        <li>Ocenaudio</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+            <footer-component></footer-component>
+        </header>
+    </body>
+</html>

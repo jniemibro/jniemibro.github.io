@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="media/avatar.png" type="image/x-icon">
+        <title>Jonathan Niemi</title>
+        <script src="js/components/header.js" type="text/javascript" defer></script>
+        <script src="js/components/footer.js" type="text/javascript" defer></script>
+        <script src="js/galleryFilter.js" type="text/javascript" defer></script>
+        <script src="js/modal.js" type="text/javascript" defer></script>
+    </head>
+
+  <body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo">
+                <p>Jonathan Niemi</p>
+                <p style="font-size: 16px; float: left;">Art & Game Development</p>
+            </a>
+            
+            <div class="header-right">
+                <a href="index.html" style="-webkit-text-stroke-color: wheat;">Portfolio</a>
+                <a href="html/about.html">About</a>
+            </div>
+        </div>
+
+        <!--
+        <div class="middle">
+            <br>
+            <h2>Portfolio</h2>
+        </div>
+        -->
+    </header>
+    
+    <section>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="art">Art</li>
+            <li class="list" data-filter="gamedev">Game Dev</li>
+            <!-- <li class="list" data-filter="3d">3D</li> -->
+        </ul>
+        <div class="product">
+            <div class="itemBox" data-item="art">
+                <a href="html/acrylic.html">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/058/358/331/medium/jonathan-niemi-jn-portland-hex-light.jpg?1673979271">
+                    <div class="hovercap">Acrylic Paintings</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/chipmonk.html">
+                    <img src="media/arcade.jpg">
+                    <i class="fab fa-unity"></i>
+                    <div class="hovercap">Chipmonk!</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/sherlock-moles-lunar-phases.html">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/073/079/754/large/jonathan-niemi-sherlockmoles-lunarphases-gameicon.jpg?1708878942">
+                    <i class="fab fa-unity"></i> 
+                    <!-- <i class="fa fa-globe"></i> -->
+                    <div class="hovercap">Sherlock Moles Investigates: Lunar Phases</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/sherlock-moles-pure-substances.html">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/065/550/232/small/jonathan-niemi-sherlockmoles-icon.jpg?1690646426">
+                    <i class="fab fa-unity"></i> 
+                    <!-- <i class="fa fa-globe"></i> -->
+                    <div class="hovercap">Sherlock Moles Investigates: Pure Substances</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/bridgettes-digits.html">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/065/550/250/small/jonathan-niemi-bridgettesdigits-icon.jpg?1690646483">
+                    <i class="fab fa-unity"></i> 
+                    <!-- <i class="fa fa-globe"></i> -->
+                    <div class="hovercap">Bridgette's Place Values & Digits</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/dr-barkley.html">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/065/550/242/small/jonathan-niemi-drbarkley-icon.jpg?1690646452">
+                    <i class="fab fa-unity"></i> 
+                    <!-- <i class="fa fa-globe"></i> -->
+                    <div class="hovercap">Dr. Barkley's Force Factory</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/tar-unity.html">
+                    <img src="https://img.itch.zone/aW1hZ2UvMTI4NDk5LzU5NzU3MC5wbmc=/315x250%23c/FvzaNC.png">
+                    <i class="fab fa-unity"></i> 
+                    <div class="hovercap">The Arcane Relics (Unity)</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="art">
+                <a href="html/pixel-art.html">
+                    <!--
+                    <img src="https://cdna.artstation.com/p/assets/images/images/047/376/326/medium/jonathan-niemi-portraits.jpg?1647445757">
+                    -->
+                    <img src="https://cdna.artstation.com/p/assets/images/images/064/375/364/large/jonathan-niemi-talonsprotagonistportraits.jpg?1687791903">
+                    <div class="hovercap">Pixel Art</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/diggy-piggies.html">
+                    <img src="https://img.itch.zone/aW1nLzExMjM1NTg4LnBuZw==/315x250%23c/yC12AK.png">
+                    <i><img src="media/godot_dark.png" style="width:20px"></i>
+                    <div class="hovercap">Diggy Piggies | GGJ '23</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/cheesy-expedition.html">
+                    <img src="https://img.itch.zone/aW1nLzk4NDQ0NDQucG5n/315x250%23c/WS8g%2By.png">
+                    <i><img src="media/godot.png" style="width:20px"></i>
+                    <div class="hovercap">Cheese-E Expedition | GWJ #48</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/these-eyes.html">
+                    <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/06/82bc82a70ff721724f6cb8ac15ed9492.png">
+                    <i><img src="media/godot.png" style="width:20px"></i>
+                    <div class="hovercap">These Eyes | GWJ #46</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/neander-brawl.html">
+                    <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/02/1635ad31637a50ba819f28a86eee382f.png">
+                    <i><img src="media/godot_dark.png" style="width:20px"></i>
+                    <div class="hovercap">Neander-Brawl | GWJ #42</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/duality-arena.html">
+                    <img src="https://img.itch.zone/aW1nLzgwNjMyNjQuanBlZw==/315x250%23c/aupp51.jpeg">
+                    <i class="fab fa-unity"></i>
+                    <div class="hovercap">Duality Arena | GGJ '22</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/bumbardia.html">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/045/904/614/medium/jonathan-niemi-jn-bumbardiapromo.jpg?1643819925">
+                    <i class="fab fa-unity"></i>
+                    <div class="hovercap">Bümbardia™</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/nanoswarm.html">
+                    <img src="https://img.itch.zone/aW1nLzc0MzM5MDMucG5n/315x250%23c/qVwFlJ.png">
+                    <i class="fab fa-unity"></i>
+                    <div class="hovercap">Nanoswarm</div>
+                </a>
+            </div>
+            <!--
+            <div class="itemBox" data-item="art">
+                <a href="html/digital-painting.html">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/045/905/504/medium/jonathan-niemi-dada7ac3-8094-47fc-909a-c319330bbe78.jpg?1643821482">
+                    <div class="hovercap">Digital Paintings</div>
+                </a>
+            </div>
+            -->
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/wip.html">
+                    <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2022/07/fb8e0575a70ebd40cd162694647aab3d.jpeg">
+                    <i><img src="media/godot.png" style="width:20px"></i>
+                    <div class="hovercap">WIP Project(s)</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="art">
+                <a href="html/digital-painting.html">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/068/299/553/large/jonathan-niemi-sharpen-up-12-lo.jpg?1697480564">
+                    <div class="hovercap">Digital Paintings</div>
+                </a>
+            </div>
+            <!--
+            <div class="itemBox" data-item="3d">
+                <a href="#">
+                    <img src="https://cdn-animation.artstation.com/p/video_sources/000/849/140/containerreveal.mp4">
+                    <div class="hovercap">"Container Reveal" Short</div>
+                </a>
+            </div>
+            -->
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/niemi-bros.html">
+                    <img src="https://img.itch.zone/aW1hZ2UyL3VzZXIvNTI5NDA1LzE0Njg5MTEucG5n/original/ddrqj1.png">
+                    <div class="hovercap">Niemi Bros Entertainment</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/80hd.html">
+                    <img src="https://avatars.githubusercontent.com/u/119633734?s=400&u=547305e2dc87c27c7254fd4a3702f4a1ba376eaf&v=4">
+                    <div class="hovercap">80HD Games</div>
+                </a>
+            </div>
+            <div class="itemBox" data-item="gamedev">
+                <a href="html/old-games.html">
+                    <img src="https://img.itch.zone/aW1nLzkyNDY1OTYucG5n/315x250%23c/wIzuuO.png">
+                    <div class="hovercap">Old Projects</div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer-component></footer-component>
+
+  </body>
+</html>
